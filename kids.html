@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra-Kids</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./main.js" defer></script>
+  <script src="./cart.js" defer></script>
+
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-gray-200 shadow-lg px-4 sticky top-0 z-50">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between h-auto md:h-14 max-w-7xl mx-auto ">
+
+      <!-- Left Section -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <img src="./images/img1.webp" alt="myntra" class="h-12 w-12" usemap="#mymap">
+        <map name="mymap">
+            <area shape="rect" coords="0,0,218,221" href="./index.html" alt="ref">
+        </map>
+
+        <!-- Mobile Icons -->
+        <div class="md:hidden flex gap-7">
+          <a href="./cart.html" class="relative">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+
+            <sub id="cartValueMob" class="absolute  -right-4 bg-red-500 text-white text-xs px-1.5 rounded-full">
+              <span>0</span>
+            </sub>
+          </a>
+          <a href="./user.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+
+      <!-- Menu -->
+      <nav class="hidden md:flex gap-6 ml-8">
+        <a href="./men.html" class="tracking-widest text-blue-800 font-bold hover:text-blue-500">MEN</a>
+        <a href="./women.html" class="tracking-widest text-blue-800 font-bold hover:text-blue-500">WOMEN</a>
+        <a href="./kids.html" class="tracking-widest text-gray-700 font-bold hover:text-blue-500">KIDS</a>
+        <a href="./home.html" class="tracking-widest text-blue-800 font-bold hover:text-blue-500">HOME</a>
+      </nav>
+
+      <!-- Search + Icons -->
+      <div class="flex items-center gap-4 mt-3 md:mt-0">
+        <!-- Search -->
+        <div class="relative w-full md:w-60">
+          <i class="fa-solid fa-magnifying-glass absolute left-2 top-3 text-gray-400"></i>
+          <input type="text" placeholder="Search for Products" class="bg-white rounded pl-8 pr-2 w-full h-10 mb-1">
+        </div>
+
+        <!-- Desktop Icons -->
+        <div class="hidden md:flex gap-7">
+          <a href="./cart.html" class="relative">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+
+            <sub id="cartValue" class="absolute  -right-4 bg-red-500 text-white text-xs px-1.5 rounded-full">
+              0
+            </sub>
+          </a>
+          <a href="./user.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main  class="bg-gray-200 flex-1">
+    <section class="text-center h-12 flex justify-center items-center bg-white">
+      <p class="font-bold text-3xl text-red-400">KIDS</p>
+    </section>
+    <section>
+      <div class=" py-4 ">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="font-bold text-2xl ml-4" style="display: ruby;">Top Wear <svg width="40px" height="40px"
+              viewBox="0 0 256 256" enable-background="new 0 0 256 256" id="Layer_1" version="1.0" xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M139.963,61.211c-8.428,0-15.604,2.417-19.6,4.112l8.855,3.776l-1.156,2.565l6.486,2.767l-3.98,8.834 l1.703,1.386l10.217-8.65l-3.109-6.901l15.197-6.309C148.527,61.256,139.963,61.211,139.963,61.211z"
+                    fill="#00CFDB"></path>
+                  <path
+                    d="M249.143,164.996l-4.896,4.138L186.859,86.54l-10.852-5.336l-0.006-0.139h-4.271l-5.012,0.889l2.629-5.916 l-3.297,0.585l2.469-5.555h-2.121l-5.012,0.89l2.176-4.898c-0.508-0.227-1.045-0.443-1.602-0.654l-1.24,0.221l0.254-0.576 c-0.539-0.187-1.092-0.369-1.67-0.542c0.484,0.39,0.707,0.636,0.707,0.636l-18.504,7.681l0.98,2.177l-1.256,1.064l1.924,4.267 l-10.221,8.65l-7.359-5.991l1.578-3.504l-2.246-1.828l2.408-5.336l-11.854-5.117c-1.766,1.041-3.07,2.199-3.801,3.437l2.213,4.98 l-1.834-0.293l2.5,5.624l-5.572-0.889h-3.715l-0.006,0.141l-9.24,4.543l-68.395,82.257l-3.563-3.01l-8.133,9.624l18.42,15.562 l13.414-6.655l-0.104-4.084l-4.258-3.598c0.635-0.723,1.449-1.651,2.404-2.734l-3.07-2.597c8.959-10.224,52.824-59.899,52.5-52.052 c-0.047,1.16-0.109,2.701-0.182,4.529c0.572-0.111,0.877,0.13,0.85,0.803c-0.064,1.547-0.152,3.771-0.258,6.449 c3.1-2.532,4.992-3.433,4.922-1.784c-0.049,1.157-0.109,2.701-0.182,4.523c0.576-0.115,0.875,0.133,0.85,0.808 c-0.363,8.74-1.48,38.958-2.277,51.463c-0.395,6.195-0.699,14.886-0.904,22.087c5.764,1.847,14.75,4.338,23.902,5.348 l12.324-15.876l4.443,5.998l3.775,5.998l6.443,4.367c17.449-0.318,31.434-8.366,31.434-8.366s-1.201-24.599-1.748-33.989 s-4.203-41.612-4.582-52.359c-0.334-9.486,34.893,41.144,43.152,53.139l-1.02,0.862c2.705,3.854,4.928,7.068,6.352,9.136 l-1.906,1.609c1.018,1.465,1.889,2.729,2.572,3.721l-1.066,0.901l4.742,2.354l25.418-21.476L249.143,164.996z M126.939,135.746 l-9.998,6.665l-11.305-7.108L104.5,113.31c0,0,13.107,1.776,22.439-0.445C126.273,121.75,126.939,135.746,126.939,135.746z"
+                    fill="#FFCF59"></path>
+                  <path
+                    d="M126.939,135.746c0,0-0.523-8.988-0.178-17.674c-8.938,1.346-17.596,1.234-17.596,1.234l0.436,18.489 l7.34,4.615L126.939,135.746z"
+                    fill="#FF9D00"></path>
+                  <line fill="none" stroke="#14346E" stroke-dasharray="7.9976,16.6616" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6" x1="105.637" x2="105.068"
+                    y1="135.303" y2="124.305"></line>
+                  <path
+                    d=" M108.545,66.765c0-6.014,11.68-10.887,26.086-10.887c14.408,0,26.09,4.873,26.09,10.887l3.553-7.998 c0-6.012-13.271-10.886-29.643-10.886c-16.369,0-29.643,4.874-29.643,10.886L108.545,66.765z"
+                    fill="none" stroke="#14346E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                    stroke-width="6"></path>
+                  <polyline fill="none"
+                    points=" 238.295,153.903 180.863,71.349 170.01,66.015 170.004,65.876 165.732,65.876 "
+                    stroke="#14346E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                    stroke-width="6"></polyline>
+                  <path
+                    d=" M148.932,213.313c17.449-0.317,31.434-8.367,31.434-8.367s-1.201-24.598-1.748-33.989c-0.547-9.39-4.203-41.611-4.582-52.358 c-0.379-10.746,43.186,53.111,43.186,53.111"
+                    fill="none" stroke="#14346E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                    stroke-width="6"></path>
+                  <polyline fill="none"
+                    points=" 102.971,65.876 99.256,65.876 99.252,66.015 90.008,70.559 21.857,152.958 " stroke="#14346E"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6"></polyline>
+                  <polygon fill="none" points=" 139.379,69.1 146.486,84.873 160.721,66.765 164.273,58.767 "
+                    stroke="#14346E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                    stroke-width="6"></polygon>
+                  <polygon fill="none" points=" 129.219,69.1 122.107,84.873 108.545,66.765 104.988,58.767 "
+                    stroke="#14346E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                    stroke-width="6"></polygon>
+                  <polyline fill="none" points=" 136.768,80.531 132.271,84.651 134.27,101.534 " stroke="#14346E"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6"></polyline>
+                  <path
+                    d=" M134.27,110.963v85.986l-12.324,15.876c-15.328-1.689-30.219-7.545-30.219-7.545s0.422-22.714,1.223-35.219 c0.799-12.504,1.914-42.724,2.275-51.463c0.361-8.738-52.334,52.195-52.334,52.195"
+                    fill="none" stroke="#14346E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                    stroke-width="6"></path>
+                  <path
+                    d=" M138.891,140.646c0.898,0.8,2.068,1.301,3.363,1.301c2.805,0,5.076-2.273,5.076-5.078s-2.271-5.077-5.076-5.077 c-1.295,0-2.465,0.5-3.363,1.3"
+                    fill="#FFFFFF" stroke="#14346E" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10" stroke-width="6"></path>
+                  <path
+                    d=" M138.891,191.796c0.898,0.801,2.068,1.303,3.363,1.303c2.805,0,5.076-2.275,5.076-5.081c0-2.802-2.271-5.075-5.076-5.075 c-1.295,0-2.465,0.5-3.363,1.299"
+                    fill="#FFFFFF" stroke="#14346E" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10" stroke-width="6"></path>
+                  <path
+                    d=" M138.891,100.506c0.898,0.798,2.068,1.299,3.363,1.299c2.805,0,5.076-2.272,5.076-5.076c0-2.806-2.271-5.077-5.076-5.077 c-1.295,0-2.465,0.499-3.363,1.298"
+                    fill="#FFFFFF" stroke="#14346E" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10" stroke-width="6"></path>
+                  <polygon fill="none"
+                    points=" 47.527,174.708 47.752,183.664 34.338,190.32 4.861,165.417 18.053,149.806 " stroke="#14346E"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6"></polygon>
+                  <polygon fill="none"
+                    points=" 213.672,174.708 213.445,183.664 226.861,190.32 256.334,165.417 243.145,149.806 "
+                    stroke="#14346E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                    stroke-width="6"></polygon>
+                  <line fill="none" stroke="#14346E" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10" stroke-width="6" x1="142.488" x2="138.713" y1="208.944" y2="202.948"></line>
+                  <line fill="none" stroke="#14346E" stroke-dasharray="7.9976,16.6616" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6" x1="116.941" x2="125.545"
+                    y1="142.411" y2="136.676"></line>
+                  <path d=" M109.602,113.785c0,0,8.252,0.311,11.139,0" fill="none" stroke="#14346E"
+                    stroke-dasharray="7.9976,16.6616" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10" stroke-width="6"></path>
+                </g>
+              </g>
+            </svg> </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  py-2 text-center" id="kids-top-container">
+              <!-- <div class="bg-white h-80 mx-4 my-4 xl:my-2 rounded-lg flex flex-col justify-between">
+                <div class="my-auto"><img src="" alt="..." class="img w-40 h-40 mx-auto"></div>
+                <div class="my-4 text-center">
+                  <p class="pName font-black text-xl"></p>
+                  <div class="flex flex-row justify-center py-2">
+                    <p class="price font-semibold"></p>
+                    <p class="actualPrice pl-3 line-through text-red-300"></p>
+                  </div>
+
+                  <button class="bg-orange-400 px-2 py-1 rounded hover:bg-gray-800 hover:text-white">Add to
+                    Cart</button>
+                </div>
+              </div>
+              <div class="bg-white h-80 mx-4 my-4 xl:my-2  rounded-lg flex flex-col justify-between">
+                <div class="my-auto"><img src=" " alt="..." class="img w-40 h-40 mx-auto"></div>
+                <div class="my-4 text-center">
+                  <p class="pName font-black text-xl"></p>
+                  <div class="flex flex-row justify-center py-2">
+                    <p class="price font-semibold"></p>
+                    <p class="actualPrice pl-3 line-through text-red-300"></p>
+                  </div>
+
+                  <button class="bg-orange-400 px-2 py-1 rounded hover:bg-gray-800 hover:text-white">Add to
+                    Cart</button>
+                </div>
+
+              </div>
+              <div class="bg-white h-80 mx-4 my-4 xl:my-2  rounded-lg flex flex-col justify-between">
+                <div class="my-auto"><img src="" alt="..." class="img w-40 h-40 mx-auto"></div>
+
+                <div class="my-4 text-center">
+                  <p class=" pName font-black text-xl"></p>
+                  <div class="flex flex-row justify-center py-2">
+                    <p class="price font-semibold"></p>
+                    <p class="actualPrice pl-3 line-through text-red-300"></p>
+                  </div>
+
+                  <button class="bg-orange-400 px-2 py-1 rounded hover:bg-gray-800 hover:text-white">Add to
+                    Cart</button>
+                </div>
+
+              </div>
+              <div class="bg-white h-80 mx-4 my-4 xl:my-2  rounded-lg flex flex-col justify-between">
+                <div class="my-auto"><img src="" alt="..." class="img w-40 h-40 mx-auto"></div>
+                <div class="my-4 text-center">
+                  <p class="pName font-black text-xl"></p>
+                  <div class="flex flex-row justify-center py-2">
+                    <p class="price font-semibold"></p>
+                    <p class="actualPrice pl-3 line-through text-red-300"></p>
+                  </div>
+
+                  <button class="bg-orange-400 px-2 py-1 rounded hover:bg-gray-800 hover:text-white">Add to
+                    Cart</button>
+                </div>
+
+              </div> -->
+            </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-gray-200 py-4 ">
+        <div class="max-w-7xl mx-auto">
+          <h3 class="font-bold text-2xl ml-4 " style="display: ruby;">Bottom Wear <svg width="50px" height="50px"
+              viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M821 191l-49-13 49-13 13-49 13 49 48 13-48 13-13 48-13-48zM868 244l-19-5 19-4 5-19 4 19 19 4-19 5-4 18-5-18z"
+                  fill="#FDCD60"></path>
+                <path d="M146 719l-21-5 21-5 5-21 4 21 21 5-21 5-4 21-5-21z" fill="#FDCD60"></path>
+                <path d="M174 165m-9 0a9 9 0 1 0 18 0 9 9 0 1 0-18 0Z" fill="#5546CB"></path>
+                <path d="M835 835a25 25 0 1 1 25-25 25 25 0 0 1-25 25z m0-36a10 10 0 1 0 10 10 10 10 0 0 0-10-10z"
+                  fill="#5546CB"></path>
+                <path
+                  d="M753 403h-4c-51-12-93-44-122-93a257 257 0 0 1-17-35H376a257 257 0 0 1-17 35c-29 49-71 81-122 93h-4l-2 327h157c50-244 82-279 107-279 9 0 15 8 21 16 20 25 55 148 86 263h153V403z"
+                  fill="#FDCD60"></path>
+                <path d="M620 793h134v-43H609l11 43zM231 793h138l12-43H231v43z" fill="#FF8859"></path>
+                <path
+                  d="M753 385v-2l2-108H632a238 238 0 0 0 13 26c26 45 62 73 108 84zM234 381v2c45-11 81-39 107-83a234 234 0 0 0 13-25H232z"
+                  fill="#FFFFFF"></path>
+                <path d="M755 255v-19a8 8 0 0 0-8-8H239a8 8 0 0 0-8 8v19z" fill="#AFBCF3"></path>
+                <path
+                  d="M775 257v-21a28 28 0 0 0-28-28H239a28 28 0 0 0-28 28v40l2 95-3 443h182l2-8c22-113 42-199 60-256 22-68 36-77 40-79l7 8c11 14 37 82 101 327l2 7h171V257z m-543-2v-19a8 8 0 0 1 8-8h507a8 8 0 0 1 8 8v19z m523 20l-2 106v2c-45-11-81-39-107-83a232 232 0 0 1-13-25z m-400 0a234 234 0 0 1-13 25c-26 44-62 72-107 83v-2l-2-106z m15 518H231v-43h150z m385 0H620l-12-44h146z m-153-63c-31-115-66-238-86-263-6-8-12-16-21-16-25 0-56 35-107 279H231l2-327h4c51-12 93-44 122-93a257 257 0 0 0 17-35h234a257 257 0 0 0 17 35c29 49 71 81 122 93h6v327z"
+                  fill="#5546CB"></path>
+              </g>
+            </svg> </h3>
+          <div class=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  py-2 text-center" id="kids-bottom-container">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-gray-200 py-4 ">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="font-bold text-2xl ml-4" style="display: ruby;">Foot Wear <svg height="48px" width="48px"
+              version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <circle style="fill:#FFD15D;" cx="256" cy="256" r="256"></circle>
+                <path style="fill:#F9B54C;"
+                  d="M293.397,509.273c97.358-14.252,176.904-83.297,206.341-174.825l-84.83-84.83l-92.824,15.001 l-215.711,57.63L293.397,509.273z">
+                </path>
+                <path style="fill:#FC6F58;"
+                  d="M426.667,286.168H113.778c-5.236,0-9.481,4.246-9.481,9.481v20.687c0,5.236,4.246,9.481,9.481,9.481 h85.333c1.105,0,2.201-0.193,3.241-0.571l25.204-9.164l25.203,9.164c1.04,0.378,2.136,0.571,3.241,0.571h170.667 c5.236,0,9.481-4.246,9.481-9.481V295.65C436.148,290.414,431.902,286.168,426.667,286.168z">
+                </path>
+                <path style="fill:#F1543F;"
+                  d="M426.667,286.168H256.288v39.65h170.379c5.236,0,9.481-4.246,9.481-9.481V295.65 C436.148,290.414,431.902,286.168,426.667,286.168z">
+                </path>
+                <path style="fill:#68533E;"
+                  d="M436.126,293.285c-1.264-18.622-16.384-56.284-64.555-65.557 c-51.719-9.957-138.73-55.511-139.6-55.972c-2.986-1.567-6.58-1.434-9.444,0.353c-48.178,30.144-103.579,0.064-104.117-0.234 c-2.934-1.643-6.522-1.608-9.426,0.093c-2.905,1.701-4.687,4.815-4.687,8.18v113.778c0,5.236,4.246,9.481,9.481,9.481h312.889 c2.625,0,5.136-1.09,6.928-3.008C435.388,298.48,436.305,295.903,436.126,293.285z">
+                </path>
+                <path style="fill:#57442F;"
+                  d="M436.126,293.285c-1.264-18.622-16.384-56.284-64.555-65.557 c-34.778-6.696-85.511-29.487-115.283-43.839v119.518h170.379c2.625,0,5.136-1.09,6.928-3.008 C435.388,298.48,436.305,295.903,436.126,293.285z">
+                </path>
+                <g>
+                  <circle style="fill:#B97850;" cx="281.859" cy="218.074" r="6.896"></circle>
+                  <circle style="fill:#B97850;" cx="319.785" cy="230.141" r="6.896"></circle>
+                  <circle style="fill:#B97850;" cx="243.933" cy="199.111" r="6.896"></circle>
+                </g>
+              </g>
+            </svg> </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  py-2 text-center" id="kids-foot-wear-container">
+            </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-gray-200 py-4 ">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="font-bold text-2xl ml-4" style="display: ruby;">Accessories <svg width="36px" height="36px"
+              viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #94d5d2;
+                    }
+
+                    .cls-2 {
+                      fill: #ffffff;
+                    }
+
+                    .cls-3 {
+                      fill: #ffeb97;
+                    }
+
+                    .cls-4 {
+                      fill: #576065;
+                    }
+                  </style>
+                </defs>
+                <title>watch</title>
+                <g id="watch">
+                  <g id="watch-2" data-name="watch">
+                    <g id="fill">
+                      <path class="cls-1"
+                        d="M59.75,23.6a25.89,25.89,0,0,0-29.51,0L27,25.82l2.2-21.33a3.24,3.24,0,0,1,3.23-3.13H57.54a3.29,3.29,0,0,1,3.24,3.36L63,25.82Z">
+                      </path>
+                      <path class="cls-1"
+                        d="M32.46,88.63a3.28,3.28,0,0,1-3.24-3.36L27,64.18l3.22,2.22a25.9,25.9,0,0,0,29.51,0L63,64.18l-2.2,21.33a3.24,3.24,0,0,1-3.23,3.12Z">
+                      </path>
+                      <path class="cls-2" d="M45,71.56A26.56,26.56,0,1,1,71.56,45,26.59,26.59,0,0,1,45,71.56Z"></path>
+                      <path class="cls-3" d="M45,64.95A20,20,0,1,1,65,45a20,20,0,0,1-20,20Z"></path>
+                    </g>
+                    <g id="outline">
+                      <g id="watch-2-2" data-name="watch-2">
+                        <polygon class="cls-4"
+                          points="56.14 46.75 43.16 46.75 43.16 29.76 46.79 29.76 46.79 43.12 56.14 43.12 56.14 46.75">
+                        </polygon>
+                        <path class="cls-4"
+                          d="M45,66.32A21.32,21.32,0,1,1,66.32,45,21.35,21.35,0,0,1,45,66.32Zm0-39A17.68,17.68,0,1,0,62.68,45,17.7,17.7,0,0,0,45,27.31Z">
+                        </path>
+                        <path class="cls-4"
+                          d="M45,73.28A28.29,28.29,0,1,1,73.28,45,28.32,28.32,0,0,1,45,73.28Zm0-52.94A24.65,24.65,0,1,0,69.65,45,24.68,24.68,0,0,0,45,20.35Z">
+                        </path>
+                        <path class="cls-4"
+                          d="M57.54,90H32.46a4.61,4.61,0,0,1-4.6-4.5L25.73,64.91l3.62-.37L31.5,85.39a1,1,0,0,0,1,1H57.54a1,1,0,0,0,1-1v-.19l2.15-20.78,3.62.37L62.14,85.5A4.61,4.61,0,0,1,57.54,90Z">
+                        </path>
+                        <path class="cls-4"
+                          d="M29.46,24.4,25.84,24l2-19.53A4.61,4.61,0,0,1,32.46,0H57.54a4.61,4.61,0,0,1,4.6,4.5l2,19.4-3.62.37-2-19.67a1,1,0,0,0-1-1H32.46a1,1,0,0,0-1,1v.19Z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg> </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  py-2 text-center" id="kids-accessories-container">
+            </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+      <section class="shadow-lg" style="box-shadow: -0px -1px 8px 2px #d2d4d6;">
+      <hr class="text-gray-300">
+      <div class="flex justify-between  max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-3 my-5 mx-8 gap-6">
+          <div class="flex gap-4">
+            <div class="my-auto border rounded-3xl h-10 w-10 flex justify-center items-center text-gray-400">
+              <i class="fa-solid fa-phone" style="color: #070b12;"></i>
+            </div>
+            
+            <div class="my-auto">
+              <p class="text-gray-500">Talk to us</p>
+              <p class="text-lg font-semibold">1800-123-1444</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="my-auto border rounded-3xl h-10 w-10 flex justify-center items-center text-gray-400">
+              <i class="fa-solid fa-circle-question" style="color: #06090f;"></i>
+            </div>
+            
+            <div class="my-auto">
+              <p class="text-gray-500">Helpcentre</p>
+              <p class="text-md font-semibold">help.maxfashion.com</p>
+            </div>
+          </div>
+          <div class="flex gap-4 ">
+            <div class="my-auto border rounded-3xl h-10 w-10 flex justify-center items-center text-gray-400" >
+              <i class="fa-regular fa-envelope" style="color: #05090f;"></i>
+            </div>
+            
+            <div class="my-auto">
+              <p class="text-gray-500">Write to us</p>
+              <p class="text-md font-semibold">help@myntra.in</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-5 items-center text-xl mx-8">
+          <div>
+            <i class="fa-brands fa-facebook-f" style="color: #04070b;"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-x-twitter" style="color: #04070b;"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-instagram" style="color: #070b13;"></i>
+          </div>
+
+        </div>
+      </div>
+      <hr class="text-gray-300 shadow-lg">
+    </section>
+    <section>
+      <div class="flex justify-between mx-10 py-4">
+        <div class="my-auto">
+          <img src="./images/log-3.png" alt=".." class="h-12">
+        </div>
+        <div class="my-auto text-gray-500">
+          <p><i class="fa-regular fa-copyright"></i> 2025 Retail World Limited</p>
+          <div class="flex">
+            <p class="hover:text-red-400">Terms & Conditions </p>
+            <p class="px-1"> - </p>
+            <p class="hover:text-red-400"> Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
