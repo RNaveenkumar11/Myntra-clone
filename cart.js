@@ -2,7 +2,7 @@ const cart = document.getElementById("cart-container");
 const cartCount = document.getElementById("cartValue");
 const cartCount2 = document.getElementById("cartValueMob");
 const priceDetails = document.getElementById("priceDetails");
-const empty = document.getElementById("cart-page");
+
 const details = document.getElementById("details");
 const totalMrp = document.getElementById("totalMrp");
 const discount = document.getElementById("discount");
@@ -36,7 +36,7 @@ const loadCart = () => {
   cart.innerHTML = "";
 
   if (cartArr.length === 0) {
-    empty.innerHTML=`<div class="flex flex-col items-center pl-30">
+    cartMain.innerHTML=`<div class="flex flex-col items-center ">
               <img src="./images/empty-cart.svg" alt="..." class="w-100 h-100">
               <p class="font-semibold text-xl">Oops...Cart is empty</p> 
             </div>`
